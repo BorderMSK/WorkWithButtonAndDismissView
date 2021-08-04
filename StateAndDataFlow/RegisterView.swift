@@ -16,9 +16,11 @@ struct RegisterView: View {
         VStack {
             HStack {
                 TextField("Enter your name", text: $name)
+                    .frame(width: 200, height: 40)
                     .multilineTextAlignment(.center)
                 Text("\(name.count)")
-                    .padding(.trailing, 50)
+                    .foregroundColor(name.count < 3 ? .red: .green )
+                    
             }
             VStack {
                 Button(action: registerUser, label: {

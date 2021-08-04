@@ -50,7 +50,7 @@ struct ButtonView: View {
 			}
 		)
 		.frame(width: 200, height: 60)
-		.background(Color.red)
+		.background(Color.blue)
 		.cornerRadius(20)
 		.overlay(
 			RoundedRectangle(cornerRadius: 20, style: .continuous)
